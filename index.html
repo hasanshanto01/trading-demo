@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+
+    <!-- links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- links -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        scrollbar-width: thin;
+      }
+
+      body {
+        background: #fafafa;
+      }
+
+      .container {
+        padding: 0 120px;
+      }
+
+      .card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 15px 34px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-heading-container {
+        font-size: 24px;
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .card-heading {
+        font-weight: 500;
+      }
+
+      .card-icon {
+        color: #fdb861;
+      }
+
+      .card-desc {
+        margin-top: 12px;
+      }
+
+      .prevent-list-item {
+        width: fit-content;
+        padding: 12px;
+        border-radius: 8px;
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .prevent-list-item:hover {
+        background: #fdb861;
+      }
+
+      .bot-card {
+        /* width: 100px;
+        height: 100px; */
+        /* border: 1px solid #000;
+        border-radius: 8px; */
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .bot-card:hover {
+        /* border: 1px solid #fdb861; */
+        color: #fdb861;
+      }
+
+      .bot-icon {
+        font-size: 32px;
+      }
+
+      .bot-title {
+        font-weight: 500;
+      }
+
+      /* responsive style */
+      @media only screen and (max-width: 1024px) {
+        .container {
+          padding: 0 8px;
+        }
+      }
+      /* responsive style */
+    </style>
+  </head>
+  <body>
+    <!-- top section start -->
+    <section class="container pt-5 relative">
+      <img
+        src="img/floating-bubble-1.svg"
+        alt=""
+        class="absolute top-0 right-0 -z-[1]"
+      />
+
+      <!-- nav section start  -->
+      <nav class="h-[60px] flex justify-between items-center">
+        <div>
+          <a href="#" class="text-3xl font-bold">Option Notes</a>
+        </div>
+        <ul class="hidden lg:flex gap-5">
+          <li class="text-sm font-semibold hover:text-[#fdb861]">
+            <a href="#">HOMEPAGE</a>
+          </li>
+          <li class="text-sm font-semibold hover:text-[#fdb861]">
+            <a href="#">TRAINING COURSES</a>
+          </li>
+          <li class="text-sm font-semibold">
+            <button>
+              <i class="fa-solid fa-magnifying-glass text-[16px]"></i>
+            </button>
+          </li>
+        </ul>
+
+        <div class="block lg:hidden"><i class="fa-solid fa-bars"></i></div>
+
+        <!-- <div>
+          <button class="bg-[#fdb861] px-4 py-1 rounded-full">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+          </button>
+        </div> -->
+      </nav>
+      <!-- nav section end  -->
+
+      <!-- hero section start -->
+      <div
+        class="flex flex-col lg:flex-row lg:items-center gap-6 my-8 relative"
+      >
+        <div class="w-full lg:w-[50%]">
+          <h1 class="text-5xl font-bold">
+            Lorem ipsum dolor sit amet consectetur
+          </h1>
+          <p class="py-6">
+            A fully integrated suite of authentication & authoriz products,
+            Stytch's platform removes the headache of.
+          </p>
+          <button class="bg-[#fdb861] px-10 py-3 rounded-full">
+            Get in Touch
+          </button>
+        </div>
+        <div class="w-full lg:w-[50%]">
+          <img src="img/banner-img.png" alt="" class="w-full" />
+        </div>
+      </div>
+      <!-- hero section end -->
+      <img
+        src="img/floating-bubble-2.svg"
+        alt=""
+        class="absolute bottom-0 left-0 -z-[1]"
+      />
+    </section>
+    <!-- top section end-->
+
+    <!-- highlighting part start -->
+    <section class="container my-[100px]">
+      <div class="flex flex-col lg:flex-row lg:justify-between">
+        <h2 class="text-3xl font-bold w-full lg:w-[50%]">
+          The Highlighting Part Of Our Solution
+        </h2>
+        <p class="w-full lg:w-[50%]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas
+          Werat viverra id et aliquet. vulputate egestas sollicitudin.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-8">
+        <div class="card">
+          <div class="card-heading-container">
+            <i class="fa-solid fa-tv card-icon"></i>
+            <h3 class="card-heading">Live Caption</h3>
+          </div>
+          <div class="card-desc">
+            Lorem ipsum dolor sit amet ipsum dolor consectetur, adipisicing
+            elit.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-heading-container">
+            <i class="fa-solid fa-paperclip card-icon"></i>
+            <h3 class="card-heading">Smart Reply</h3>
+          </div>
+          <div class="card-desc">
+            Lorem ipsum dolor sit amet ipsum dolor consectetur, adipisicing
+            elit.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-heading-container">
+            <i class="fa-regular fa-bell card-icon"></i>
+            <h3 class="card-heading">Sound Amplifier</h3>
+          </div>
+          <div class="card-desc">
+            Lorem ipsum dolor sit amet ipsum dolor consectetur, adipisicing
+            elit.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-heading-container">
+            <i class="fa-solid fa-location-arrow card-icon"></i>
+            <h3 class="card-heading">Gesture Navigation</h3>
+          </div>
+          <div class="card-desc">
+            Lorem ipsum dolor sit amet ipsum dolor consectetur, adipisicing
+            elit.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-heading-container">
+            <i class="fa-regular fa-lightbulb card-icon"></i>
+            <h3 class="card-heading">Dark Theme</h3>
+          </div>
+          <div class="card-desc">
+            Lorem ipsum dolor sit amet ipsum dolor consectetur, adipisicing
+            elit.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-heading-container">
+            <i class="fa-solid fa-shield-halved card-icon"></i>
+            <h3 class="card-heading">Privacy Controls</h3>
+          </div>
+          <div class="card-desc">
+            Lorem ipsum dolor sit amet ipsum dolor consectetur, adipisicing
+            elit.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-heading-container">
+            <i class="fa-solid fa-location-dot card-icon"></i>
+            <h3 class="card-heading">Location Controls</h3>
+          </div>
+          <div class="card-desc">
+            Lorem ipsum dolor sit amet ipsum dolor consectetur, adipisicing
+            elit.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-heading-container">
+            <i class="fa-solid fa-lock card-icon"></i>
+            <h3 class="card-heading">Security Updates</h3>
+          </div>
+          <div class="card-desc">
+            Lorem ipsum dolor sit amet ipsum dolor consectetur, adipisicing
+            elit.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- highlighting part end -->
+
+    <!-- prevent failure start -->
+    <section
+      class="container flex flex-col lg:flex-row lg:items-center my-[100px] relative"
+    >
+      <img
+        src="img/floating-bubble-3.svg"
+        alt=""
+        class="absolute top-0 right-0 -z-[1]"
+      />
+
+      <div class="w-full lg:w-[60%]">
+        <img src="img/sells-by-country.png" alt="" class="w-full" />
+      </div>
+
+      <div class="w-full lg:w-[40%]">
+        <h2 class="text-3xl font-bold">
+          Prevent failure from to impacting your reputation
+        </h2>
+        <p class="py-6">
+          Our platform helps you build secure onboarding authentication
+          experiences that retain and engage your users. We build the
+          infrastructure, you can.
+        </p>
+        <ul class="prevent-list-container">
+          <li class="prevent-list-item">
+            <i class="fa-solid fa-fire"></i>
+            <p>Habit building essential choose habit</p>
+          </li>
+          <li class="prevent-list-item">
+            <i class="fa-solid fa-brain"></i>
+            <p>Get an overview of Habit Calendars</p>
+          </li>
+          <li class="prevent-list-item">
+            <i class="fa-solid fa-clock"></i>
+            <p>Start building with Habitify platform</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- prevent failure start -->
+
+    <!-- accountability star -->
+    <section
+      class="container flex flex-col lg:flex-row lg:items-center gap-6 my-[100px]"
+    >
+      <div class="w-full lg:w-[40%]">
+        <h2 class="text-3xl font-bold">Accountability that works for you</h2>
+        <p class="py-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas
+          Werat viverra id et aliquet. vulputate egestas sollicitudin.
+        </p>
+        <button class="bg-[#fdb861] px-10 py-3 rounded-full">
+          Know About Us
+        </button>
+      </div>
+
+      <div class="w-full lg:w-[60%]">
+        <iframe
+          class="w-full h-[300px] md:h-[400px] rounded-[8px] shadow-lg"
+          src="https://www.youtube.com/embed/TmWIrBPE6Bc?si=S3iVnNvlbcJxvfnm"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <!-- accountability end -->
+
+    <!-- bots start -->
+    <section class="container my-[100px] relative">
+      <img
+        src="img/floating-bubble-2.svg"
+        alt=""
+        class="absolute bottom-0 left-0 -z-[1]"
+      />
+
+      <div>
+        <h2 class="text-3xl font-bold">Bots</h2>
+
+        <div class="my-8 flex gap-6">
+          <div class="bot-card">
+            <i class="fa-solid fa-bell bot-icon"></i>
+            <p class="bot-title">Alert Bot</p>
+          </div>
+          <div class="bot-card">
+            <i class="fa-solid fa-chart-simple bot-icon"></i>
+            <p class="bot-title">Stock Bot</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bots end -->
+
+    <!-- footer start -->
+    <footer
+      class="h-[100px] bg-[#000] text-[#fafafa] font-semibold flex flex-col justify-center items-center"
+    >
+      <p>© 2024 Option Notes</p>
+      <ul class="flex gap-5 my-2">
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </footer>
+    <!-- footer end -->
+  </body>
+</html>
